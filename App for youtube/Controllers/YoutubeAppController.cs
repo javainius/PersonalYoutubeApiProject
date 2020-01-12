@@ -24,14 +24,14 @@ namespace App_for_youtube.Controllers
 
 
         [HttpPost]
-        public ActionResult Result(URL url)
+        public ActionResult Result(URL model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View("Index", url);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return View("Index", url);
+            //}
 
-            string usersURL = url.Url;
+            string usersURL = model.Url;
             var uri = new Uri(usersURL);
 
             // you can check host here => uri.Host <= "www.youtube.com"
