@@ -1,0 +1,27 @@
+﻿@model App_for_youtube.Models.Video
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Result</title>
+</head>
+<body>
+    <div>
+
+
+        <p>video Id: </p>
+        @Html.DisplayFor(modelItem => Model.id)
+        <br />
+        <p>Views: </p>
+        @Html.DisplayFor(modelItem => Model.statistics.viewCount)
+        <br />
+        <iframe width="700" height="500" src="@Model.GetURL(Model.id)">
+        </iframe>
+    </div>
+</body>
+</html>

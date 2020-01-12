@@ -137,6 +137,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\URL.cs" />
     <Compile Include="Models\VideoData.cs" />
     <Compile Include="Models\Videos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -184,6 +185,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\YoutubeApp\Result.cshtml" />
     <Content Include="Views\YoutubeApp\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
