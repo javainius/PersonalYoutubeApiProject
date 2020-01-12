@@ -1,0 +1,12 @@
+﻿@model App_for_youtube.Models.Video
+
+@{
+    ViewBag.Title = "Index";
+}
+
+    <p>video Id: </p>
+    @Html.DisplayFor(modelItem => Model.id)
+    <br />
+    <p>Views: </p>
+    @Html.DisplayFor(modelItem => Model.statistics.viewCount)
+    
